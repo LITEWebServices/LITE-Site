@@ -24,14 +24,16 @@ body{
     right: 0;
     z-index: 999;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;    
     transition: all 500ms;
     box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
 
+
 }
 nav h1{
+    margin-left: 10vw;
     font-family: 'Roboto', sans-serif;
     font-size: 4vh;
     color: var(--color);
@@ -39,6 +41,7 @@ nav h1{
 }
 
 nav h3{
+    margin-left: 10vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1vh;
     color: var(--color);
@@ -48,7 +51,6 @@ nav ul{
     display: flex;
     width: 40%;
     justify-content: space-around;
-
 }
 nav ul li{
     list-style: none;
