@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    left: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar{
+    /* variables */
+    --color: white;
+    --color-hover: rgb(207, 240, 240);
+    --background: black;
+    --background-color: rgb(75, 75, 75);
+    /* style */
+    position: fixed;
+    /* background: var(--background); */
+    background: var(--background);
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;    
+    transition: all 500ms;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+
+}
+nav h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vh;
+    color: var(--color);
+    letter-spacing: 3px;
+}
+
+nav h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vh;
+    color: var(--color);
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color);
+    transition: all 150ms ease-in;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) 3px solid;
+}
+
+nav .nav-menu{
+    display: none;
+}
+
+.nav-bar.scrolled{
+    --color: black;
+    --color-hover: rgb(49, 49, 49);
+    --background: white;
+    --background-color: rgb(254, 254, 254);
+    
+}
+
+.top-container{
+    background-image: url('./images/front-image.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden;
+}
+.caption-container{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); /*  */
+    position: absolute; 
+    height: 100vh;
+    width: 85vh;
+    bottom: 0;
+    left: 60%;
+    
+}
+.top-container h1{
+    margin: 10px;
+    color: white;
+    text-indent: 2px;
+    position: absolute;
+    width: 88%;
+    height: 40%;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-bottom{
+    background: black;
+    left: 0;
+    right: 0;
+    height: 100px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.head-bottom h2{
+    position: relative;
+    margin-right: 90px;
+    color: white;  
+}
+.start-btn{
+    display: flex;
+    background: rgb(32, 116, 227);
+    position: relative;
+    height: 50px;
+    width: 90px;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    text-shadow: 2px 2px 2px black;
+    transition: all 250ms;
+}   
+
+.start-btn:hover{
+    background: rgb(110, 160, 224);
+}
+
+.slideshow-section{
+    position: relative;
+    /* border: red 5px solid; */
+    background:rgb(233, 233, 233);
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.slideshow-text{
+    position: relative;
+    background: rgb(233, 233, 233);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.slideshow{
+    position: relative;
+    background: rgb(233,233,233);
+    width: 60%;
+    min-height: 500px;
+    min-width: 900px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border:rgb(32, 116, 227) 5px solid; */
+}
+
+/* Footer */
+.separate{
+    left: 0;
+    right: 0;
+    background: black;
+    height: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer{
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    text-align: center;
+}
+
+footer .sections{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+footer .sections a{
+    font-size: 2vh;
+    text-decoration: underline;
+}
+
+footer .social-media-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+footer ul .links{
+    list-style: none;
+}
+
+footer .legal{
+    margin: 20px;
+    margin-top: 50px;
+    text-align: right;
+}
+
+@media screen and (max-width: 1400px){
+    footer .sections{
+        grid-template-columns: 30% 40% 40%;
+    }
+}
+@media screen and (max-width: 1248px){
+    .caption-container{
+        width: 65vh;
+    }
+    footer .sections{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    nav ul{
+        width: 45%;
+    }
+
+    .caption-container{
+        width: 55vh;
+    }
+}
+@media screen and (max-width: 960px){
+    .slideshow{
+        transform: scale(0.9, 0.9);
+    }
+}
+@media screen and (max-width: 850px){
+    .slideshow{
+        transform: scale(0.8, 0.8);
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        overflow-x: hidden;
+        
+    }
+    nav ul{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 92vh;
+        background: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 500ms ease;
+    }
+    nav ul a{
+        color: white;
+    }
+    nav ul a:hover{
+        color: var(--color);
+        border-bottom: rgb(207, 240, 240) 3px solid;
+    }
+    nav .nav-menu{
+        display: block;
+        color: var(--color);
+        cursor: pointer;
+    }
+    nav .nav-active{
+        transform: translateX(0);
+        color: var(--color);
+    }
+    .nav-bar .scrolled{
+        --background-color: rgb(254, 254, 254);
+    }
+    .caption-container{
+        height: 50vh;
+        width: 100%;
+        left: 0;
+    }
+    .slideshow{
+        transform: scale(0.75, 0.75);
+    }
+    .slideshow .next-btn{
+        margin-right: 50px;
+    }
+    .slideshow .prev-btn{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 600px){
+    .slideshow{
+        transform: scale(0.7, 0.7);
+    }
+    .slideshow .next-btn{
+        margin-right: 50px;
+    }
+    .slideshow .prev-btn{
+        margin-left: 50px;
+    }
+}
