@@ -6,9 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* body{
+body{
     overflow-x: hidden;
-} */
+    overflow-y: scroll;
+}
 
 .nav-bar{
     /* variables */
