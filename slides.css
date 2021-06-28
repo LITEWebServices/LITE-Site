@@ -37,6 +37,7 @@
     height: 500px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .prev-btn, .next-btn{
@@ -45,10 +46,17 @@
     font-size: 5vh;
     color: rgb(129, 129, 129);
     cursor: pointer;
-    top: 50%;
+    top: 0%;
     margin: 5px;
 }
 
+.prev-btn:hover{
+    color: rgb(175, 175, 175);
+}
+
+.next-btn:hover{
+    color: rgb(175, 175, 175);
+}
 .slide-bar{
     /* position: absolute; */
     z-index: 1;
