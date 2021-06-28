@@ -19,7 +19,7 @@
 
 .slideshow .slide.active{
     transform: translateX(0);
-    transition: 250ms;
+    transition: 500ms;
 }
 
 .slideshow .slide img{
