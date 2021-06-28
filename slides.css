@@ -71,6 +71,7 @@
     width: 15px;
     height: 15px;
     margin: 15px;
+    transition: all 500ms;
 }
 
 .slideshow .slide-bar .frame-icon.active{
