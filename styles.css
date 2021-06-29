@@ -215,6 +215,12 @@ footer .social-media-links{
     justify-content: center;
     flex-direction: column;
     list-style: none;
+    color: black;
+}
+
+.fa.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border-radius: 15px;
 }
 
 footer ul .links{
