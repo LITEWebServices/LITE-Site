@@ -269,7 +269,7 @@ footer .legal{
         position: absolute;
         top: 100%;
         width: 100%;
-        height: 92vh;
+        height: 100vh;
         background: var(--background-color);
         display: flex;
         flex-direction: column;
