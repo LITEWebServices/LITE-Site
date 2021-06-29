@@ -354,3 +354,20 @@ footer .legal{
         margin-left: 50px;
     }
 }
+
+@media screen and (max-width: 375px){
+    .slideshow{
+        transform: translateY(-60%);
+    }
+
+    .slideshow-section{
+        align-items: center;
+        height: 40vh;
+    }
+    .slideshow .next-btn{
+        margin-right: 50px;
+    }
+    .slideshow .prev-btn{
+        margin-left: 50px;
+    }
+}
