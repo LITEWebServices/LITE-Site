@@ -357,7 +357,7 @@ footer .legal{
 
 @media screen and (max-width: 375px){
     .slideshow{
-        transform: translateY(-60%);
+        transform: scale(0.4, 0.4) translateY(-60%);
     }
 
     .slideshow-section{
