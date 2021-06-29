@@ -288,6 +288,7 @@ footer .legal{
         display: block;
         color: var(--color);
         cursor: pointer;
+        margin-right: 10%;
     }
     nav .nav-active{
         transform: translateX(0);
