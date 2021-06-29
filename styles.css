@@ -161,6 +161,7 @@ nav .nav-menu{
     grid-template-columns: 100%;
     align-items: center;
     justify-items: center;
+    /* border: red 5px solid; */
 }
 .slideshow-text{
     position: relative;
@@ -328,6 +329,23 @@ footer .legal{
 @media screen and (max-width: 600px){
     .slideshow{
         transform: scale(0.5, 0.5);
+    }
+    .slideshow .next-btn{
+        margin-right: 50px;
+    }
+    .slideshow .prev-btn{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .slideshow{
+        transform: scale(0.4, 0.4) translateY(-60%);
+    }
+
+    .slideshow-section{
+        align-items: center;
+        height: 25vh;
     }
     .slideshow .next-btn{
         margin-right: 50px;
