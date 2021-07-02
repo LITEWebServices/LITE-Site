@@ -48,7 +48,7 @@ nav h3{
 
 nav .logo{
     text-align: center;
-    width: 5%;
+    width: 80px;
     margin-left: 10vw;
     transition: all 500ms;
 }
