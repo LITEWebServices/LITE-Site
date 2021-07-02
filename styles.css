@@ -101,7 +101,7 @@ nav .nav-menu{
 .caption-container{
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); /*  */
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
     position: absolute; 
     height: 100vh;
     width: 85vh;
@@ -121,13 +121,14 @@ nav .nav-menu{
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 5vh;
 }
 
 .head-bottom{
     background: black;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 10vh;
     position: relative;
     align-items: center;
     display: flex;
@@ -138,20 +139,21 @@ nav .nav-menu{
     position: relative;
     margin-right: 90px;
     color: white;  
+
 }
 .start-btn{
     display: flex;
     background: rgb(32, 116, 227);
     position: relative;
-    height: 50px;
-    width: 90px;
-    border-radius: 7px;
+    height: 7vh;
+    width: 8vw;
+    border-radius: 1vh;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 90%;
+    font-size: 2vh;
     text-shadow: 2px 2px 2px black;
     transition: all 250ms;
 }   
@@ -315,6 +317,10 @@ footer .legal{
         left: 0;
         text-align: center;
     }
+
+    .head-bottom .start-btn{
+        font-size: 1.5vh;
+    }
     .slideshow{
         transform: scale(0.70, 0.70);
     }
@@ -348,6 +354,15 @@ footer .legal{
     .slideshow .prev-btn{
         margin-left: 50px;
     }
+    .head-bottom h2{
+        margin-left: 10%;
+    }
+    .head-bottom .start-btn{
+        margin-right: 5%;
+    }
+    .caption-container h1{
+        margin-left: 8%;
+    }
 }
 
 @media screen and (max-width: 530px){
@@ -371,7 +386,6 @@ footer .legal{
     .slideshow{
         transform: scale(0.4, 0.4) translateY(-60%);
     }
-
     .slideshow-section{
         align-items: center;
         height: 40vh;
