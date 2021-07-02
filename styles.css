@@ -144,7 +144,7 @@ nav .nav-menu{
     display: flex;
     background: rgb(32, 116, 227);
     position: relative;
-    height: 7vh;
+    height: 6.5vh;
     width: 8vw;
     border-radius: 1vh;
     align-items: center;
@@ -152,7 +152,7 @@ nav .nav-menu{
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 2vh;
+    font-size: 1vw;
     text-shadow: 2px 2px 2px black;
     transition: all 250ms;
 }   
@@ -369,7 +369,7 @@ footer .legal{
     }
     .slideshow-section{
         align-items: center;
-        height: 40vh;
+        height: 50vh;
     }
     .slideshow .next-btn{
         margin-right: 50px;
@@ -379,19 +379,28 @@ footer .legal{
     }
 }
 
+@media screen and (max-width: 415px){
+    .slideshow-section{
+        height: 50vh;
+    }
+}
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
     .slideshow{
         transform: scale(0.4, 0.4) translateY(-60%);
     }
     .slideshow-section{
         align-items: center;
-        height: 20vh;
+        height: 60vh;
     }
     .slideshow .next-btn{
         margin-right: 50px;
     }
     .slideshow .prev-btn{
         margin-left: 50px;
+    }
+
+    .head-bottom .start-btn{
+        width: 40vw;
     }
 }
