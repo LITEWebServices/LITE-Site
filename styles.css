@@ -313,6 +313,7 @@ footer .legal{
         height: 50vh;
         width: 100%;
         left: 0;
+        text-align: center;
     }
     .slideshow{
         transform: scale(0.70, 0.70);
@@ -382,5 +383,6 @@ footer .legal{
         margin-left: 50px;
     }
 
+    
 
 }
