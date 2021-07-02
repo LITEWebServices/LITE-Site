@@ -29,11 +29,9 @@ body{
     min-height: 8vh;    
     transition: all 500ms;
     box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
-
-
 }
 nav h1{
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
     font-family: 'Roboto', sans-serif;
     font-size: 4vh;
     color: var(--color);
@@ -41,12 +39,24 @@ nav h1{
 }
 
 nav h3{
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
     font-family: 'Roboto', sans-serif;
     font-size: 1vh;
     color: var(--color);
     letter-spacing: 2px;
 }
+
+nav .logo{
+    text-align: center;
+    width: 5%;
+    margin-left: 10vw;
+    transition: all 500ms;
+}
+
+nav .logo:hover{
+    border: var(--color) 1px solid;
+}
+
 nav ul{
     display: flex;
     width: 40%;
@@ -279,6 +289,7 @@ footer .legal{
     }
     nav ul a{
         color: white;
+        
     }
     nav ul a:hover{
         color: var(--color);
@@ -369,4 +380,6 @@ footer .legal{
     .slideshow .prev-btn{
         margin-left: 50px;
     }
+
+
 }

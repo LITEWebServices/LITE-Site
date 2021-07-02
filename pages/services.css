@@ -69,13 +69,16 @@ section{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: blue 5px solid;
     }
 
     .package{
         text-indent: 0;
         text-align: center;
         width: 40%;
+    }
+
+    .package h2{
+        text-decoration: underline;
     }
 
     .package-options ul{
