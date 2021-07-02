@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cc5215791e.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='../styles.css' />
-    <link rel='stylesheet' href='./portfolio.css' />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>LITE Web Services</title>
@@ -25,8 +24,8 @@
             </a>
         </div>
         <ul class='nav-list'>
-            <li class='nav-links'><a href='/portfolio-page/portfolio.html'>PORTFOLIO</a></li>
-            <li class='nav-links'><a href='#'>ABOUT</a></li>
+            <li class='nav-links'><a href='/pages/portfolio.html'>PORTFOLIO</a></li>
+            <li class='nav-links'><a href='/pages/about.html'>ABOUT</a></li>
             <li class='nav-links'><a href='#'>CONTACT</a></li>
             <li class='nav-links'><a href='#'>SERVICES</a></li>
         </ul>
@@ -35,28 +34,7 @@
         </div>
     </nav>
 
-    <section class='sliders'>
-        <div class='spacer s1'></div>
-        <div class='slide-container c1'>
-            <h2>Lauren Cassady Photography</h2>
-            <div class='site-images'>
-                <img src='../images/other-sites/ex1.png'/>
-                <img src='../images/other-sites/ex2.png'/>
-                <img src='../images/other-sites/ex3.png'/>
-            </div>
-        </div>
-
-        <div class="spacer s2"></div>
-
-        <div class='slide-container c2'>
-            <h2>K&G Prototype</h2>
-            <img src='../images/other-sites/k&g-cover.png'/>
-        </div>
-        <div class='slide-container'>
-
-        </div>
-        
-    </section>
+    
     
 
     <!-- Footer -->
