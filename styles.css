@@ -8,7 +8,6 @@
 
 body{
     overflow-x: hidden;
-    /* overflow-y: hidden; */
 }
 
 .nav-bar{
@@ -317,7 +316,6 @@ footer .legal{
         left: 0;
         text-align: center;
     }
-
     .head-bottom .start-btn{
         font-size: 1.5vh;
     }
@@ -343,7 +341,6 @@ footer .legal{
     }
 }
 
-
 @media screen and (max-width: 600px){
     .slideshow{
         transform: scale(0.5, 0.5);
@@ -359,6 +356,7 @@ footer .legal{
     }
     .head-bottom .start-btn{
         margin-right: 5%;
+        width: 20vw;
     }
     .caption-container h1{
         margin-left: 8%;
@@ -366,23 +364,6 @@ footer .legal{
 }
 
 @media screen and (max-width: 530px){
-    .slideshow{
-        transform: scale(0.4, 0.4) translateY(-60%);
-    }
-
-    .slideshow-section{
-        align-items: center;
-        height: 25vh;
-    }
-    .slideshow .next-btn{
-        margin-right: 50px;
-    }
-    .slideshow .prev-btn{
-        margin-left: 50px;
-    }
-}
-
-@media screen and (max-width: 375px){
     .slideshow{
         transform: scale(0.4, 0.4) translateY(-60%);
     }
@@ -396,7 +377,21 @@ footer .legal{
     .slideshow .prev-btn{
         margin-left: 50px;
     }
+}
 
-    
 
+@media screen and (max-width: 375px){
+    .slideshow{
+        transform: scale(0.4, 0.4) translateY(-60%);
+    }
+    .slideshow-section{
+        align-items: center;
+        height: 20vh;
+    }
+    .slideshow .next-btn{
+        margin-right: 50px;
+    }
+    .slideshow .prev-btn{
+        margin-left: 50px;
+    }
 }
