@@ -30,14 +30,14 @@ body{
 }
 nav h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 4vh;
     color: var(--color);
     letter-spacing: 3px;
 }
 
 nav h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 8px;
+    font-size: 1vh;
     color: var(--color);
     letter-spacing: 2px;
 }
