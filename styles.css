@@ -138,6 +138,7 @@ nav .nav-menu{
     position: relative;
     margin-right: 90px;
     color: white;  
+    font-size: 2rem;
 }
 .start-btn{
     display: flex;
@@ -352,6 +353,7 @@ footer .legal{
     }
     .head-bottom h2{
         margin-left: 10%;
+        font-size: 1rem;
     }
     .head-bottom .start-btn{
         margin-right: 5%;
