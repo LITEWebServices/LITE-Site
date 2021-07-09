@@ -49,13 +49,13 @@ nav h3{
 
 nav .logo{
     text-align: center;
-    width: 80px;
-    margin-left: 10vw;
+    width: 72px;
+    margin-left: 10%;
     transition: all 500ms;
 }
 
-nav .logo:hover{
-    border: var(--color) 1px solid;
+.logo:hover{
+    border: white 1px solid;
 }
 
 nav ul{
@@ -278,6 +278,7 @@ footer .legal{
         overflow-x: hidden;
         
     }
+
     nav ul{
         position: absolute;
         top: 100%;
@@ -392,12 +393,13 @@ footer .legal{
 }
 
 @media screen and (max-width: 376px){
+
     .slideshow{
         transform: scale(0.4, 0.4) translateY(-60%);
     }
     .slideshow-section{
         align-items: center;
-        height: 60vh;
+        height: 40vh;
     }
     .slideshow .next-btn{
         margin-right: 50px;
