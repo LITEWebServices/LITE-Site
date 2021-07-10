@@ -29,16 +29,31 @@ section{
     background: rgb(226, 212, 194);
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 1000px){
+    .text-container{
+        width: 50%;
+    }
+    .img-container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .text-container p{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 415px){
     section{
         height: 80vh;
-        /* flex-direction: column; */
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .text-container{
         width: 90%;
+        font-size: 1rem;
     }
 
     .img-container{
