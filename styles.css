@@ -9,7 +9,7 @@
 body{
     overflow-x: hidden;
 }
-
+/* Navbar */
 .nav-bar{
     /* variables */
     --color: white;
@@ -36,7 +36,6 @@ nav h1{
     width: 200%;
     text-align: left;
 }
-
 nav h3{
     font-family: 'Roboto', sans-serif;
     font-size: 0.5rem;
@@ -44,20 +43,16 @@ nav h3{
     letter-spacing: 2px;
     width: 200%;
     text-align: left;
-    
 }
-
 nav .logo{
     text-align: center;
     width: 72px;
     margin-left: 10%;
     transition: all 500ms;
 }
-
 .logo:hover{
     border: white 1px solid;
 }
-
 nav ul{
     display: flex;
     width: 40%;
@@ -77,11 +72,9 @@ nav ul li a:hover{
     color: var(--color-hover);
     border-bottom: var(--color-hover) 3px solid;
 }
-
 nav .nav-menu{
     display: none;
 }
-
 .nav-bar.scrolled{
     --color: black;
     --color-hover: rgb(49, 49, 49);
@@ -90,6 +83,8 @@ nav .nav-menu{
     
 }
 
+
+/* Content */
 .top-container{
     background-image: url('./images/front-image-1400pxoptimized.jpg');
     background-size: cover;
@@ -127,7 +122,6 @@ nav .nav-menu{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
 }
-
 .head-bottom{
     background: black;
     left: 0;
@@ -161,10 +155,11 @@ nav .nav-menu{
     text-shadow: 2px 2px 2px black;
     transition: all 250ms;
 }   
-
 .start-btn:hover{
     background: rgb(110, 160, 224);
 }
+
+/* Slideshow */
 
 .slideshow-section{
     position: relative;
@@ -195,9 +190,18 @@ nav .nav-menu{
     /* border:rgb(32, 116, 227) 5px solid; */
 }
 
+
+/* Spacers */
 .spacer{
     height: 20vh;
 }
+.spacer.s1{
+    height: 15vh;
+}
+.spacer.s2{
+    height: 10vh;
+}
+
 
 /* Footer */
 .separate{
@@ -346,7 +350,6 @@ footer .legal{
         margin-left: 50px;
     }
 }
-
 @media screen and (max-width: 600px){
     .slideshow{
         transform: scale(0.5, 0.5);
@@ -369,7 +372,6 @@ footer .legal{
         margin-left: 8%;
     }
 }
-
 @media screen and (max-width: 530px){
     .slideshow{
         transform: scale(0.4, 0.4) translateY(-60%);
@@ -385,13 +387,11 @@ footer .legal{
         margin-left: 50px;
     }
 }
-
 @media screen and (max-width: 415px){
     .slideshow-section{
         height: 50vh;
     }
 }
-
 @media screen and (max-width: 376px){
 
     .slideshow{

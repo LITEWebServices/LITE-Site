@@ -3,4 +3,45 @@ section{
     left: 0;
     right: 0;
     height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: white 2px solid;
+    margin: 1% 1%;
+}
+
+.img-container{
+    width: 30%;
+    min-width: 50px;
+}
+
+.who-are-we .img-container{
+    background: rgb(194, 212, 129);
+}
+
+.our-team .img-container{
+    background: rgb(226, 212, 194);
+}
+
+@media screen and (max-width: 414px){
+    section{
+        height: 80vh;
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .text-container{
+        width: 90%;
+    }
+
+    .img-container{
+        width: 90%;
+    }
 }

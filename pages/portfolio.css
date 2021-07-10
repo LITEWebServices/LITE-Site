@@ -18,7 +18,7 @@
     background:rgb(167, 197, 255);
 }
 .pics-container.c2{
-    background: rgb(180, 180, 180);
+    background: rgb(83, 215, 224);
 }
 .site-images{
     display: flex;
@@ -30,14 +30,6 @@
 .portfolio-images img{
     width: 30%;
     border: white 1px solid;
-}
-
-.spacer.s1{
-    height: 15vh;
-}
-
-.spacer.s2{
-    height: 10vh;
 }
 
 @media screen and (max-width: 415px){
