@@ -12,43 +12,6 @@ const app = function(){
 
 app();
 
-//slides
-const nextBtn = document.querySelector('.next-btn');
-const prevBtn = document.querySelector('.prev-btn');
-const slides = document.querySelectorAll('.slide');
-const icon = document.querySelectorAll('.frame-icon');
-const numSlides = slides.length;
-var currSlide = 0;
-
-nextBtn.addEventListener('click', () => {
-    slides.forEach((slide) => {
-        slide.classList.remove('active');
-    });
-    icon.forEach((icon) => {
-        icon.classList.remove('active');
-    });
-    currSlide++;
-    if(currSlide > (numSlides-1)){
-        currSlide = 0;
-    }
-    slides[currSlide].classList.add('active');
-    icon[currSlide].classList.add('active');
-});
-prevBtn.addEventListener('click', () => {
-    slides.forEach((slide) => {
-        slide.classList.remove('active');
-    });
-    icon.forEach((icon) => {
-        icon.classList.remove('active');
-    });
-    currSlide--;
-    if(currSlide < 0){
-        currSlide = numSlides - 1;
-    }
-    slides[currSlide].classList.add('active');
-    icon[currSlide].classList.add('active');
-});
-
 //scroll-observer
 
 const header = document.querySelector('nav');

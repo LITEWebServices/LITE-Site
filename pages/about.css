@@ -1,62 +1,169 @@
-section{
-    background: rgb(233, 233, 233);
-    left: 0;
-    right: 0;
-    height: 40vh;
-    display: flex;
-    justify-content: space-around;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-.text-container{
-    width: 30%;
+.content{
+    background: #222D5a;
+    text-align: center;
+    color: white;
+}
+.divider{
+    width: 80%;
+    height: 1px;
+    margin-left: 10%;
+    background: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+}
+
+section{
+    width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    border-radius: 15px;
+    text-indent: 15px;
+    padding: 10px;
+}
+
+.about-separate{
+    height: 10vh;
+    background: black;
+}
+
+.circle{
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    margin-top: 20px;
+}
+
+.circle.red{
+    background: rgb(245, 96, 96);
+}
+
+.circle.blue{
+    background: rgb(110, 110, 255);
+}
+
+.circle.green{
+    background: rgb(75, 207, 97);
+}
+
+.slideshow-text-box{
     display: flex;
     align-items: center;
     text-align: center;
-    border: white 2px solid;
-    margin: 1% 1%;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    background: rgb(15, 45, 85);
+    margin-top: 25px;
+    height: 500px;
+    width: 40%;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+/* slideshow */
+.slideshow{
+    position: relative;
+    left: 45%;
+    width: 800px;
+    height: 550px;
+    background: black;
+    color: white;
+    border-left: black 15px solid;
+    border-right: black 15px solid;
+    border-radius: 10px;
+}
+.slide.active{
+    z-index: 1;
+    position: absolute;
+    width: 100%; 
+    display: flex;
+    transition: 500ms;
+}
+.slide{
+    display:none;
+}
+.slide img{
+    top: 100%;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
+}
+.slide-nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    height: 50px;
+}
+.peg{
+    background: gray;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin: 15px;
+    cursor: pointer;    
+    transition: all 500ms;
+}
+.peg:hover{
+    height: 25px;
+    width: 25px;
+}
+.peg.active{
+    background: rgb(200, 200, 200);
 }
 
-.img-container{
-    width: 30%;
-    min-width: 50px;
-}
 
-.who-are-we .img-container{
-    background: rgb(194, 212, 129);
-}
-
-.our-team .img-container{
-    background: rgb(226, 212, 194);
-}
-
-@media screen and (max-width: 1000px){
-    .text-container{
-        width: 50%;
+@media screen and (max-width: 1440px){
+    .slideshow{
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .img-container{
-        width: 50%;
+
+    .slideshow-text-box{
+        margin: 0;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 4vw;
     }
 }
 
-@media screen and (max-width:600px){
-    .text-container p{
-        font-size: 0.75rem;
+@media screen and (max-width: 850px){
+    .slideshow{
+        left: 50%;
+        transform: translateX(-50%) translateY(-15%) scale(75%, 75%);
+    }
+}
+@media screen and (max-width: 650px){
+    .slideshow{
+        left: 50%;
+        transform: translateX(-50%) translateY(-25%) scale(50%, 50%);
+    }
+}
+@media screen and (max-width: 376px){
+    .slideshow{
+        transform: translateX(-50%) translateY(-30%) scale(40%, 40%);
     }
 }
 
-@media screen and (max-width: 415px){
-    section{
-        height: 80vh;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .text-container{
-        width: 90%;
-        font-size: 1rem;
-    }
-
-    .img-container{
-        width: 90%;
+@media screen and (max-width: 281px){
+    .slideshow{
+        left: 50%;
+        transform: translateX(-50%) translateY(-35%) scale(30%, 30%);
     }
 }
