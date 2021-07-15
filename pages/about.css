@@ -145,25 +145,24 @@ section{
 
 @media screen and (max-width: 850px){
     .slideshow{
-        left: 50%;
-        transform: translate(-50%, -15%) scale(75%);
+        transform: scale(75%) translate(-100%, -15%) ;
     }
 }
 @media screen and (max-width: 650px){
     .slideshow{
         left: 50%;
-        transform: translate(-50%, -25%) scale(50%);
+        transform: scale(50%) translate(-100%, -55%) ;
     }
 }
 @media screen and (max-width: 420px){
     .slideshow{
-        transform: translate(-50%, -30%) scale(40%);
+        transform: scale(40%) translate(-100%, -30%) ;
     }
 }
 
 @media screen and (max-width: 281px){
     .slideshow{
         left: 50%;
-        transform: translate(-50%,-35%) scale(30%);
+        transform: scale(30%) translate(-100%,-35%);
     }
 }
