@@ -146,24 +146,24 @@ section{
 @media screen and (max-width: 850px){
     .slideshow{
         left: 50%;
-        transform: translateX(-50%) translateY(-15%) scale(75%, 75%);
+        transform: translate(-50%, -15%) scale(75%);
     }
 }
 @media screen and (max-width: 650px){
     .slideshow{
         left: 50%;
-        transform: translateX(-50%) translateY(-25%) scale(50%, 50%);
+        transform: translate(-50%, -25%) scale(50%);
     }
 }
 @media screen and (max-width: 420px){
     .slideshow{
-        transform: translateX(-50%) translateY(-30%) scale(40%, 40%);
+        transform: translate(-50%, -30%) scale(40%);
     }
 }
 
 @media screen and (max-width: 281px){
     .slideshow{
         left: 50%;
-        transform: translateX(-50%) translateY(-35%) scale(30%, 30%);
+        transform: translate(-50%,-35%) scale(30%);
     }
 }
