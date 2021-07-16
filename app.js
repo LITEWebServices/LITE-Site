@@ -16,9 +16,7 @@ app();
 
 const header = document.querySelector('nav');
 const introSection = document.querySelector('.head-bottom');
-
 const introSectionOptions = {};
-
 const navObserver = new IntersectionObserver(function(entries, introSectionObserver) {
     entries.forEach(entry => {
         if(!entry.isIntersecting){
@@ -27,7 +25,6 @@ const navObserver = new IntersectionObserver(function(entries, introSectionObser
             header.classList.remove('scrolled');
         }
     });
-}, 
-introSectionOptions);
+}, introSectionOptions);
 
 navObserver.observe(introSection);

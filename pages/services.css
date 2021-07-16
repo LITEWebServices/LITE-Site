@@ -4,7 +4,11 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+nav .nav-links.services{
+    text-decoration: none;
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) 3px solid;
+}
 h1{
     text-align: center;
 }

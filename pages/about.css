@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+nav .nav-links.about{
+    text-decoration: none;
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) 3px solid;
+}
+
 .content{
     background: #222D5a;
     text-align: center;

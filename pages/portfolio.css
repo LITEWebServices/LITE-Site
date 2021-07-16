@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+nav .nav-links.portfolio{
+    text-decoration: none;
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) 3px solid;
+}
+
 .pics-container{
     text-align: center;
     padding-bottom: 5vh;
