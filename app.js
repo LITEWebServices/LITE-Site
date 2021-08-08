@@ -1,16 +1,19 @@
+//general 
+
+//nav-menu 
+const slideFunc = function(){
+    const menu = document.querySelector('.nav-menu');
+    const navUl = document.querySelector('.nav-list');
+    menu.addEventListener('click', () => {
+        navUl.classList.toggle('nav-active');
+    });
+}
+slideFunc();
+
+
 //home page ----------------------------------------------
 
 if (document.URL.includes("index.html")) {
-    //nav-menu 
-    const slideFunc = function(){
-        const menu = document.querySelector('.nav-menu');
-        const navUl = document.querySelector('.nav-list');
-        menu.addEventListener('click', () => {
-            navUl.classList.toggle('nav-active');
-        });
-    }
-    slideFunc();
-
     //scroll-observer
     const header = document.querySelector('nav');
     const introSection = document.querySelector('.head-bottom');
