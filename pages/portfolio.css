@@ -21,22 +21,18 @@ nav .nav-links.portfolio{
     font-size: 2rem;
     padding-bottom: 10px;
 }
-
 .pics-container h2 a{
-    color: black;
+    color: white;
     transition: all 500ms;
 }
-
 .pics-container h2 a:hover{
-    border-bottom: black 2px solid;
+    border-bottom: white 2px solid;
 }
-
 .pics-container.c1{
     background:rgb(167, 197, 255);
 }
 .pics-container.c2{
-    background: rgb(255, 128, 128);
-    
+    background: rgb(255, 97, 97);
 }
 .site-images{
     display: flex;
@@ -44,11 +40,75 @@ nav .nav-links.portfolio{
     flex-wrap:wrap;
     justify-content: space-around;
 }
-
 .portfolio-images img{
     width: 30%;
     border: white 1px solid;
 }
+
+.learn-more-btn{
+    transform: translateX(0);
+    color: white;
+    padding-top: 15px;
+    transition: transform 1s ease-in;
+}
+.learn-more-btn:hover{
+    text-decoration: underline;
+}
+
+.learn-more-btn.active{
+    transform: translateX(-300%)
+}
+.hide-btn{
+    transform: translateX(300%);
+    color: white;
+    transition: transform 1s ease-in 0s;
+
+
+}
+.hide-btn:hover{
+    text-decoration: underline;
+}
+
+.hide-btn.active{
+    padding-top: 50px;
+    transform: translateX(0);
+
+}
+
+.divider{
+    width: 80%;
+    margin-left: 10%;
+    height: 2px;
+    background: white;
+    margin-top: 20px;
+}
+
+.story{
+    opacity: 0;
+    height: 0;
+    transform: translateX(300%);
+    transition: transform 500ms, height 1s, opacity 250ms;
+}
+
+.story .text{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.story .text h4{
+    padding-top: 20px;
+    text-decoration: underline;
+    color: rgb(218, 218, 218);
+    letter-spacing: 1px;
+}
+.story.active{
+    color: rgb(192, 192, 192);
+    opacity: 1;
+    transform: translateX(0);
+    height: 30vh;
+    
+}
+
 
 @media screen and (max-width: 415px){
     .site-images{

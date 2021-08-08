@@ -28,6 +28,7 @@ section{
     margin: 30px;
     text-align: center;
     width: 30vw;
+    height: 30vh;
     background: skyblue;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
