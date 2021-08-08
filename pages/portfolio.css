@@ -131,4 +131,13 @@ nav .nav-links.portfolio{
         padding-top: 2vh;
     }
 
+    .story .text{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .story.active{
+        height: 80vh;
+    }
+
 }
