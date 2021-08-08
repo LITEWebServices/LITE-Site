@@ -141,7 +141,7 @@ section{
 
 .customers .divider{
     margin-left: 5%;
-    width: 90%;
+    width: 60%;
     background: rgb(245, 96, 96);
     height: 3px;
     border-radius: 10px;
@@ -190,6 +190,21 @@ section{
 
 }
 
+@media screen and (max-width: 1000px){
+    .customers .divider{
+        width: 90%;
+    }
+
+    .customers ol{
+        padding-top: 10px;
+    }
+
+    .customers ol li{
+        padding: 10px;
+    }
+
+}
+
 @media screen and (max-width: 850px){
     .slideshow .peg{
         height: 12px;
@@ -219,4 +234,9 @@ section{
         height: 10px;
         width: 10px;        
     }
+
+    .customers h4{
+        font-size: 1rem;
+    }
+
 }
