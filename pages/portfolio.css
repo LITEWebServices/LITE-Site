@@ -19,12 +19,24 @@ nav .nav-links.portfolio{
 }
 .pics-container h2{
     font-size: 2rem;
+    padding-bottom: 10px;
 }
+
+.pics-container h2 a{
+    color: black;
+    transition: all 500ms;
+}
+
+.pics-container h2 a:hover{
+    border-bottom: black 2px solid;
+}
+
 .pics-container.c1{
     background:rgb(167, 197, 255);
 }
 .pics-container.c2{
     background: rgb(255, 128, 128);
+    
 }
 .site-images{
     display: flex;
@@ -47,6 +59,12 @@ nav .nav-links.portfolio{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
+    .pics-container.c2 img{
+        padding-bottom: 10px;
+        border: none;
+    }
+
     .pics-container h2{
         font-size: 1.5rem;
         padding-bottom: 2vh;
