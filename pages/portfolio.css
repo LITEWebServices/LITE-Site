@@ -109,8 +109,25 @@ nav .nav-links.portfolio{
     
 }
 
+@media screen and (max-width: 1300px){
+    .story .text{
+        width: 80%;
+        margin-left: 10%;
+    }
 
-@media screen and (max-width: 415px){
+    .story.active{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .story.active{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 485px){
     .site-images{
         flex-direction: column;
     }
