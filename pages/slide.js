@@ -32,3 +32,4 @@ pegs.forEach((item, index) => {
         pegs[currentSlide].classList.add('active');
     });
 });
+

@@ -65,7 +65,7 @@ section{
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 1vw;
     font-weight: bold;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -130,6 +130,43 @@ section{
 .peg.active{
     background: rgb(200, 200, 200);
 }
+
+/* Next section */
+.transition-line{
+    width: 100%;
+    height: 25px;
+    background: rgb(34,45,90);
+    background: linear-gradient(90deg, rgba(34,45,90,1) 0%, rgba(245,96,96,1) 100%);
+}
+
+.customers .divider{
+    margin-left: 5%;
+    width: 90%;
+    background: rgb(245, 96, 96);
+    height: 3px;
+    border-radius: 10px;
+}
+
+.customers h2{
+    padding-top: 40px;
+    margin-left: 10%;
+    font-size: 3rem;
+}
+.customers h4{
+    margin-left: 10%;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.customers ol{
+    margin-left: 15%;
+    list-style: circle;
+}
+
+.customers ol li{
+    padding: 5px;
+}
+
 
 
 @media screen and (max-width: 1440px){
