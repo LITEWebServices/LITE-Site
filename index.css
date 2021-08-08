@@ -101,3 +101,49 @@ nav .nav-links.index{
     padding-bottom: 2%;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 1248px){
+    .caption-container{
+        width: 65vh;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .caption-container{
+        width: 55vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .caption-container{
+        height: 50vh;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .head-bottom .start-btn{
+        font-size: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .head-bottom h2{
+        margin-left: 10%;
+        font-size: 1rem;
+    }
+    .head-bottom .start-btn{
+        margin-right: 5%;
+        width: 20vw;
+    }
+    .caption-container h1{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .head-bottom .start-btn{
+        width: 40vw;
+    }
+}
