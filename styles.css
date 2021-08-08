@@ -116,6 +116,11 @@ footer{
     position: sticky;
     text-align: center;
 }
+
+footer li{
+    list-style: none;
+}
+
 footer .sections{
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -123,6 +128,7 @@ footer .sections{
 footer .sections a{
     font-size: 1rem;
     text-decoration: underline;
+    color: black;
 }
 footer .social-media-links{
     display: flex;
@@ -131,6 +137,23 @@ footer .social-media-links{
     list-style: none;
     color: black;
 }
+
+footer .social-media-links .fa.fa-instagram{
+    color: rgb(196, 0, 196);
+}
+
+footer .social-media-links .fa.fa-twitter{
+    color: rgb(14, 187, 255);
+}
+
+footer .social-media-links .fa.fa-linkedin{
+    color: rgb(0, 60, 139);
+}
+
+footer .social-media-links .fa.fa-youtube{
+    color: red;
+}
+
 footer ul .links{
     list-style: none;
 }
