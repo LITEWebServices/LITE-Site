@@ -42,6 +42,7 @@ if (document.URL.includes('portfolio.html')){
         learnMore.classList.add('active');
         hideBtn.classList.add('active');
     })
+    
     hideBtn.addEventListener('click', () => {
         storyPart.classList.remove('active');
         learnMore.classList.remove('active');

@@ -34,6 +34,10 @@ nav .nav-links.portfolio{
 .pics-container.c2{
     background: rgb(255, 97, 97);
 }
+.pics-container.c3{
+    background: rgb(45, 45, 88);
+    color: white;
+}
 .site-images{
     display: flex;
     flex-direction: row;
