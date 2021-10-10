@@ -36,6 +36,41 @@ section{
     padding: 10px;
 }
 
+.pfp-box{
+    width: 100vw;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
+
+.pfp{
+    border-radius: 100px;
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    background: rgb(199, 199, 199);
+}
+
+.pfp.lalit{
+    background: url('../images/creators/lalit_website_pic.jpeg'); 
+    background-size: cover;
+}
+
+.pfp.tanish{
+    background: url('../images/creators/tanish_fbla.jpeg'); 
+    background-size: cover;
+}
+
+.pfp p{
+    position: relative;
+    top: 200px;
+    font-size: 1.3em;
+}
+
 .about-separate{
     height: 10vh;
     background: black;
@@ -215,6 +250,20 @@ section{
         height: 12px;
         width: 12px;        
     }
+
+    .pfp-bpx{
+        margin-bottom: 10vh;
+    }
+
+    .pfp{
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+    }
+
+    .pfp p{
+        top: 150px;
+    }
 }
 @media screen and (max-width: 650px){
     .slideshow{
@@ -226,6 +275,19 @@ section{
         width: 10px;        
     }
 }
+
+@media screen and (max-width: 550px){
+    .pfp-box{
+        flex-direction: column;
+        height: 80vh;
+        margin-top: 0;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+    }
+
+}
+
+
 @media screen and (max-width: 420px){
     .slideshow{
         width: 80vw;
