@@ -55,7 +55,12 @@ section{
     background: rgb(199, 199, 199);
 }
 
+.pfp img{
+    display: none;
+}
+
 .pfp.lalit{
+
     background: url('../images/creators/lalit_website_pic.jpeg'); 
     background-size: cover;
 }
