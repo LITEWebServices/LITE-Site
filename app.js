@@ -34,20 +34,21 @@ if (document.URL.includes("index.html")) {
 //portfolio page ----------------------------------------------
 if (document.URL.includes('portfolio.html')){
 
-    const learnMore = document.querySelector('.learn-more-btn');
-    const hideBtn = document.querySelector('.hide-btn')
-    const storyPart = document.querySelector('.story')
-    learnMore.addEventListener('click', ()=>{
-        storyPart.classList.add('active');
-        learnMore.classList.add('active');
-        hideBtn.classList.add('active');
-    })
+    // const learnMore = document.querySelector('.learn-more-btn');
+    // const hideBtn = document.querySelector('.hide-btn')
+    // const storyPart = document.querySelector('.story')
+    // learnMore.addEventListener('click', ()=>{
+    //     storyPart.classList.add('active');
+    //     learnMore.classList.add('active');
+    //     hideBtn.classList.add('active');
+    //     console.log('clicked')
+    // })
     
-    hideBtn.addEventListener('click', () => {
-        storyPart.classList.remove('active');
-        learnMore.classList.remove('active');
-        hideBtn.classList.remove('active');
-    })
+    // hideBtn.addEventListener('click', () => {
+    //     storyPart.classList.remove('active');
+    //     learnMore.classList.remove('active');
+    //     hideBtn.classList.remove('active');
+    // })
     
 }
 
