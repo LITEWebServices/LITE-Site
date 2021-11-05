@@ -139,8 +139,8 @@ nav .nav-links.index{
 }
 
 .wcia-video{
-    width: 75vw;
-    height: 75vh;
+    width: 750px;
+    height: 500px;
     padding-top: 25px;
     margin-left:-6%; 
 }
@@ -151,7 +151,6 @@ nav .nav-links.index{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
 }
-
 
 
 .showcase{
