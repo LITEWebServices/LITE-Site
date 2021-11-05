@@ -115,18 +115,49 @@ nav .nav-links.index{
 
 .transition-line.upper{
     background: rgb(200,200,200);
-    background: linear-gradient(0deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 }
+
+.wcia-container{
+    position: absolute;
+    left: 10%;
+    /* transform: translateX(-50%); */
+
+}
+
+.wcia-link{
+    font-size: 2.5rem;
+    text-align: center;
+    /* margin-left: -5%; */
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    transition-duration: 500ms;
+}
+
+.wcia-link:hover{
+    color: rgb(32, 116, 227);
+}
+
+.wcia-video{
+    width: 75vw;
+    height: 75vh;
+    padding-top: 25px;
+    margin-left:-6%; 
+}
+
+
 
 .transition-line.lower{
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(220,220,220,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
 }
+
+
 
 .showcase{
     height: 100vh;
     width: 100%;
-    background: rgb(220,220,220);
+    background: rgb(0,0,0);
 }
 
 .showcase h1{
@@ -195,6 +226,22 @@ nav .nav-links.index{
         background: radial-gradient(circle, rgba(255,97,97,1) 0%, rgba(255,255,255,1) 100%);
         height: 30vh;
     }
+
+    .wcia-video{
+        margin-top: 0;
+        /* border: red 5px solid; */
+        height: 300px;
+    }
+
+    .showcase{
+        height: 60vh;
+        
+    }
+
+    .wcia-container{
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -211,12 +258,33 @@ nav .nav-links.index{
         margin-left: 8%;
     }
 
+    .wcia-video{
+        height: 200px;
+        width: 400px;
+        margin-top: 5px;
+    }
+
+    .wcia-link{
+        font-size: 1rem;
+    }
+
+    .showcase{
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width: 376px){
     .head-bottom .start-btn{
         width: 40vw;
     }
+    .wcia-video{
+        height: 300px;
+        width: 350px;
+        margin-top: 5px;
+    }
 
+    .wcia-container{
+        /* left: 0; */
+    }
 
 }
