@@ -132,6 +132,7 @@ nav .nav-links.index{
     color: rgb(255, 255, 255);
     font-weight: 1000;
     transition-duration: 500ms;
+    
 }
 
 .wcia-link:hover{
@@ -196,9 +197,13 @@ nav .nav-links.index{
     
 }
 
-@media screen and (max-width: 1248px){
+@media screen and (min-width: 1248px){
     .caption-container{
         width: 65vh;
+    }
+
+    .wcia-link{
+        position:absolute;
     }
 
 }
@@ -235,6 +240,11 @@ nav .nav-links.index{
     .showcase{
         height: 60vh;
         
+    }
+
+    .wcia-link{
+        font-size: 2rem;
+        margin-left: 10%;
     }
 
     .wcia-container{
