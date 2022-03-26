@@ -34,22 +34,29 @@ if (document.URL.includes("index.html")) {
 //portfolio page ----------------------------------------------
 if (document.URL.includes('portfolio.html')){
 
-    // const learnMore = document.querySelector('.learn-more-btn');
-    // const hideBtn = document.querySelector('.hide-btn')
-    // const storyPart = document.querySelector('.story')
-    // learnMore.addEventListener('click', ()=>{
-    //     storyPart.classList.add('active');
-    //     learnMore.classList.add('active');
-    //     hideBtn.classList.add('active');
-    //     console.log('clicked')
-    // })
+
+    const sites = document.querySelectorAll('.site-showcase .main-img');
+    const options = {
+        threshold: 0,
+        rootMargin: "-250px",
+    };
+
+    const portfolioObserver = new IntersectionObserver(function(entries, portfolioObserver){
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("scrolled");
+            }
+            //  else{ 
+            //     entry.target.classList.remove("scrolled");
+            // }
+
+        });
     
-    // hideBtn.addEventListener('click', () => {
-    //     storyPart.classList.remove('active');
-    //     learnMore.classList.remove('active');
-    //     hideBtn.classList.remove('active');
-    // })
-    
+    }, options);
+
+    sites.forEach(site => {
+        portfolioObserver.observe(site);
+    })
 }
 
 //about page ----------------------------------------------
