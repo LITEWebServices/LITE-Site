@@ -11,6 +11,11 @@ nav .nav-links.services{
 }
 h1{
     text-align: center;
+    
+}
+
+.package-options h1{
+    font-size: 2rem;
 }
 
 .text-background{
@@ -46,7 +51,11 @@ section{
     text-align: left;
     text-indent: 30%;
     list-style-position: inside;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.package .divider{
+    margin-left: 10%;
 }
 
 .package h2{
@@ -55,15 +64,15 @@ section{
 }
 
 .package.p1{
-    background: rgba(245,96,96,1);
+    background: rgb(131, 48, 48);
 }
 
 .package.p2{
-    background: rgb(153, 58, 207);
+    background: rgb(52, 25, 68);
 }
 
 .package.p3{
-    background: rgb(55, 89, 226); /*make lighter blue*/
+    background: rgb(42, 60, 129); /*make lighter blue*/
     text-indent: 0;
     text-align: center;
 }
