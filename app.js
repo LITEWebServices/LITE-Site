@@ -95,3 +95,12 @@ if (document.URL.includes("about.html")) {
     });
 }
 
+if (document.URL.includes("services.html")) {
+    // const submitBtn = document.getElementById("submit");
+    // submitBtn.addEventListener('click', () => {
+    //     document.getElementById("name").value="Lite";
+    //     document.getElementById("email").value=null;
+    //     document.getElementById("msg").value=null;
+    // })
+}
+

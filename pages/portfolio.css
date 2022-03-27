@@ -35,9 +35,9 @@ nav .nav-links.portfolio{
 
 
 .main-img{
-    transform: scale(90%) ;
+    transform: scale(85%) ;
     height: 100%;
-    width: 55%;
+    width: 60%;
     position: absolute;
     object-fit: cover;
     opacity: 0%;
@@ -97,7 +97,7 @@ nav .nav-links.portfolio{
     position: absolute;
     width: 40%;
     top: 48%;
-    left: 55%;
+    left: 57.5%;
 }
 
 .portfolio-images .site-showcase.lcp .text{
@@ -113,41 +113,6 @@ nav .nav-links.portfolio{
     font-weight: lighter;
 }
 
-
-
-
-
-
-
-.learn-more-btn{
-    transform: translateX(0);
-    color: white;
-    padding-top: 15px;
-    transition: transform 1s ease-in;
-}
-.learn-more-btn:hover{
-    text-decoration: underline;
-}
-
-.learn-more-btn.active{
-    transform: translateX(-300%)
-}
-.hide-btn{
-    transform: translateX(300%);
-    color: white;
-    transition: transform 1s ease-in 0s;
-
-
-}
-.hide-btn:hover{
-    text-decoration: underline;
-}
-
-.hide-btn.active{
-    padding-top: 50px;
-    transform: translateX(0);
-
-}
 
 .divider{
     width: 80%;

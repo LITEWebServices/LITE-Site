@@ -50,9 +50,7 @@ nav .logo{
     margin-left: 10%;
     transition: all 500ms;
 }
-.logo:hover{
-    border: white 1px solid;
-}
+
 nav ul{
     display: flex;
     width: 40%;
