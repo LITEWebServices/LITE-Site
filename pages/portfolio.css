@@ -35,7 +35,7 @@ nav .nav-links.portfolio{
 
 
 .main-img{
-    transform: scale(85%) ;
+    transform: scale(85%) translateX(-5%);
     height: 100%;
     width: 60%;
     position: absolute;
