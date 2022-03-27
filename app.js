@@ -35,27 +35,50 @@ if (document.URL.includes("index.html")) {
 if (document.URL.includes('portfolio.html')){
 
 
-    const sites = document.querySelectorAll('.site-showcase .main-img');
+    const main_imgs = document.querySelectorAll('.site-showcase .main-img');
+    const extra_imgtxt = document.querySelectorAll('.slide-in');
+    const sites = document.querySelectorAll('.site-showcase');
+
     const options = {
         threshold: 0,
         rootMargin: "-250px",
     };
 
-    const portfolioObserver = new IntersectionObserver(function(entries, portfolioObserver){
+    const bigImgObserver = new IntersectionObserver(function(entries, portfolioObserver){
         entries.forEach(entry => {
             if(entry.isIntersecting){
                 entry.target.classList.add("scrolled");
             }
-            //  else{ 
-            //     entry.target.classList.remove("scrolled");
-            // }
 
         });
     
     }, options);
 
+    const txtImgObserver = new IntersectionObserver(function(entries, portfolioObserver){
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                // entry.target.classList.add("scrolled");
+                // alert(entry.target.lastElementChild.className);
+                entry.target.lastElementChild.classList.add('scrolled');
+
+
+
+
+                // txtimg = entry.querySelector('slide-in');
+                // alert(txtimg.)
+                // txtimg.target.classList.add("scrolled");
+            }
+
+        });
+
+    }, options);
+
+    main_imgs.forEach(img => {
+        bigImgObserver.observe(img);
+    })
+
     sites.forEach(site => {
-        portfolioObserver.observe(site);
+        txtImgObserver.observe(site);
     })
 }
 
