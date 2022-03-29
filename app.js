@@ -1,9 +1,11 @@
 //general 
 
 //nav-menu 
+
+const menu = document.querySelector('.nav-menu');
+const navUl = document.querySelector('.nav-list');
+
 const slideFunc = function(){
-    const menu = document.querySelector('.nav-menu');
-    const navUl = document.querySelector('.nav-list');
     menu.addEventListener('click', () => {
         navUl.classList.toggle('nav-active');
     });
@@ -15,20 +17,36 @@ slideFunc();
 
 if (document.URL.includes("index.html")) {
     //scroll-observer
-    const header = document.querySelector('nav');
-    const introSection = document.querySelector('.head-bottom');
+    const navbar = document.querySelector('.nav-bar');
+    const introSection = document.querySelector('.main-text p');
     const introSectionOptions = {};
+
+    // navbar.style.display = 'none'; 
+
+    const dropDownBtn = document.querySelector('.drop-down-btn');
+    const dropDownText = document.querySelector('.drop-down-text');
+
+
+    dropDownBtn.addEventListener('click', ()=>{
+       
+        dropDownBtn.classList.toggle('active');
+        dropDownText.classList.toggle('active');
+    })
+
+
     const navObserver = new IntersectionObserver(function(entries, introSectionObserver) {
         entries.forEach(entry => {
             if(!entry.isIntersecting){
-                header.classList.add('scrolled');
+                navbar.classList.remove('inactive');
             } else{
-                header.classList.remove('scrolled');
+                navbar.classList.add('inactive');
             }
         });
     }, introSectionOptions);
 
     navObserver.observe(introSection);
+
+
 }
 
 //portfolio page ----------------------------------------------
@@ -57,16 +75,7 @@ if (document.URL.includes('portfolio.html')){
     const txtImgObserver = new IntersectionObserver(function(entries, portfolioObserver){
         entries.forEach(entry => {
             if(entry.isIntersecting){
-                // entry.target.classList.add("scrolled");
-                // alert(entry.target.lastElementChild.className);
                 entry.target.lastElementChild.classList.add('scrolled');
-
-
-
-
-                // txtimg = entry.querySelector('slide-in');
-                // alert(txtimg.)
-                // txtimg.target.classList.add("scrolled");
             }
 
         });
@@ -119,11 +128,6 @@ if (document.URL.includes("about.html")) {
 }
 
 if (document.URL.includes("services.html")) {
-    // const submitBtn = document.getElementById("submit");
-    // submitBtn.addEventListener('click', () => {
-    //     document.getElementById("name").value="Lite";
-    //     document.getElementById("email").value=null;
-    //     document.getElementById("msg").value=null;
-    // })
+
 }
 

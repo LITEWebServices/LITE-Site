@@ -64,15 +64,18 @@ section{
 }
 
 .package.p1{
-    background: rgb(131, 48, 48);
+    /* background: rgb(131, 48, 48); */
+    background: rgba(245,96,96,1);
 }
 
 .package.p2{
-    background: rgb(52, 25, 68);
+    /* background: rgb(52, 25, 68); */
+    background: rgb(153, 58, 207);
 }
 
 .package.p3{
-    background: rgb(42, 60, 129); /*make lighter blue*/
+    /* background: rgb(42, 60, 129); make lighter blue */
+    background: rgb(55, 89, 226);
     text-indent: 0;
     text-align: center;
 }
@@ -153,6 +156,51 @@ textarea{
     margin-top: 50px;
 }
 
+
+.contact-options{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.contact-options .calendly-link{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-options .calendly-link p{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-indent: 0px;
+    padding: 10px;
+    margin: 15px 0px;
+    
+}
+
+.contact-options .calendly-link a{
+    color: white;
+    width: 40%;
+    height: 20px;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 500ms;
+}
+
+.contact-options .calendly-link a:hover{
+    background: rgb(153, 58, 207);
+}
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
 input, textarea{
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -179,11 +227,7 @@ textarea{
     background-color: rgb(245,245,245);
 }
 
-.inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 @media screen and (max-width: 1248px){
     .packages{

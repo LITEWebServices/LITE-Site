@@ -13,12 +13,16 @@ nav .nav-links.portfolio{
 }
 
 .portfolio-images .spacer.s1{
-    background-color: rgb(255, 97, 97);
+    background-color: rgb(240, 176, 176);
 }
 
 .site-showcase{
     height: 110vh;
     position: relative;
+}
+
+.site-showcase.ctb{
+    background-color:rgb(240, 176, 176);
 }
 
 .site-showcase.bbm{

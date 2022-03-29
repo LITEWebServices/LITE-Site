@@ -4,10 +4,12 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
 }
 
 body{
     overflow-x: hidden;
+    /* background-color: rgb(20,20,20); */
 }
 /* Navbar */
 .nav-bar{
@@ -27,27 +29,35 @@ body{
     min-height: 8vh;    
     transition: all 500ms;
     box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+    /* display: none; */
+    transform: translateY(0);
+    transition: transform 500ms ecubic-bezier(.45,.59,0,1.01);
+}
+
+.nav-bar.inactive{
+    transform: translateY(-150px);
+    /* display: none; */
 }
 nav h1{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: var(--color);
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     width: 200%;
-    text-align: left;
+    text-align: center;
 }
 nav h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: var(--color);
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     width: 200%;
-    text-align: left;
+    text-align: center;
 }
 nav .logo{
     text-align: center;
     width: 72px;
-    margin-left: 10%;
+    margin-left: 5%;
     transition: all 500ms;
 }
 
@@ -55,10 +65,9 @@ nav ul{
     display: flex;
     width: 40%;
     justify-content: space-around;
-}
-nav ul li{
     list-style: none;
 }
+
 nav ul li a{
     text-decoration: none;
     color: var(--color);
@@ -123,6 +132,12 @@ footer .sections{
     display: grid;
     grid-template-columns: 20% 60% 20%;
 }
+
+.sections div{
+    display: flex;
+    flex-direction: column;
+}
+
 footer .sections a{
     font-size: 1rem;
     text-decoration: underline;
