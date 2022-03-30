@@ -40,7 +40,7 @@ nav .nav-links.index{
 .lite-text{
     margin-left: 15px;
     text-align: center;
-    background: black;
+    background: rgb(0, 0, 0, 0.5);
     padding: 0px 5px;
 }
 

@@ -15,7 +15,7 @@ slideFunc();
 
 //home page ----------------------------------------------
 
-if (document.URL.includes("index.html")) {
+if (document.URL.includes("index.html") || document.body.getAttribute('class') == 'index') {
     //scroll-observer
     const navbar = document.querySelector('.nav-bar');
     const introSection = document.querySelector('.main-text p');
@@ -25,7 +25,6 @@ if (document.URL.includes("index.html")) {
 
     const dropDownBtn = document.querySelector('.drop-down-btn');
     const dropDownText = document.querySelector('.drop-down-text');
-
 
     dropDownBtn.addEventListener('click', ()=>{
        

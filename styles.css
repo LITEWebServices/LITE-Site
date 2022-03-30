@@ -20,52 +20,67 @@ body{
     --background-color: rgb(75, 75, 75);
     /* style */
     position: fixed;
-    background: var(--background);
-    right: 0;
+    margin-top: 20px;
     z-index: 999;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;    
     transition: all 500ms;
-    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
-    /* display: none; */
     transform: translateY(0);
+    height: 50px;
     transition: transform 500ms ecubic-bezier(.45,.59,0,1.01);
 }
 
 .nav-bar.inactive{
     transform: translateY(-150px);
-    /* display: none; */
-}
-nav h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    color: var(--color);
-    /* letter-spacing: 3px; */
-    width: 200%;
-    text-align: center;
-}
-nav h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.6rem;
-    color: var(--color);
-    /* letter-spacing: 2px; */
-    width: 200%;
-    text-align: center;
-}
-nav .logo{
-    text-align: center;
-    width: 72px;
-    margin-left: 5%;
-    transition: all 500ms;
 }
 
+nav .logo{
+    text-align: center;
+    /* width: 72px; */
+    transition: all 500ms;
+    background: rgb(0, 0, 0, 0.5);
+    margin-left: 15px;
+    padding: 0px 5px;
+    margin-top: -10px;
+    transition: background-color 500ms;
+}
+
+nav .logo:hover{
+    background: rgb(0, 0, 0, 1);
+}
+
+nav h1{
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 2rem;
+    color: var(--color);
+    /* width: 200%; */
+    /* text-align: center; */
+}
+nav h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.5rem;
+    color: var(--color);
+    transform: translateY(-50%);
+    /* letter-spacing: 2px; */
+    /* width: 200%; */
+    /* text-align: center; */
+}
+
+
 nav ul{
+    /* display: flex; */
+    /* width: 40%; */
+    /* justify-content: space-around; */
     display: flex;
-    width: 40%;
     justify-content: space-around;
     list-style: none;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 25px;
+    /* list-style: none; */
 }
 
 nav ul li a{
@@ -88,6 +103,34 @@ nav .nav-menu{
     --background: white;
     --background-color: rgb(254, 254, 254);
     
+}
+
+/* Drop Down Button */
+.drop-down-btn{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    /* background: rgba(34,45,90,1); */
+    border: white solid 2px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 500ms, border-radius 500ms, rotate 500ms 500ms;
+}
+
+.drop-down-btn:hover{
+    transform: scale(2);
+    border-radius: 25px;
+
+}
+
+.drop-down-btn.active{
+    rotate: 180deg;
+}
+
+.fa-solid.fa-angle-down{
+    width: 100%;
+    text-align: center;
+    transform: translateY(5%);
 }
 
 /* Spacers */
