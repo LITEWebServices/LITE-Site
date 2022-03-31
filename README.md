@@ -24,3 +24,10 @@ Internship form
 Social media icons
 
 Website is responsive for iPhone XS, iPhone 11, Laptop/Desktop, Tablet.
+
+
+Copyright Copmliance / Documentation:
+
+Pitch Deck slides provided by Slide Carnival
+formsubmit.co utilized as 3rd party form service
+WCIA video: verbal agreement coming from https://www.wcia.com/news/17-year-old-ceo/. 
