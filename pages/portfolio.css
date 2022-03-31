@@ -201,7 +201,7 @@ nav .nav-links.portfolio{
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
     .portfolio-landing{
         margin-top: 7.5vh;
     }

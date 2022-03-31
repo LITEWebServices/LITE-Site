@@ -222,7 +222,7 @@ nav .nav-links.index{
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
 
     .top-container{
         height: 100vh;
@@ -276,6 +276,7 @@ nav .nav-links.index{
     .wcia-link{
         font-size: 1rem;
         width: 100%;
+        margin-top: 15px;
         /* border: green 2px solid; */
 
     }

@@ -191,14 +191,14 @@ footer .legal{
     text-align: right;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
     
     nav .logo{
         margin-left: 5px;
     }
     
     nav ul{
-        width: 75%;
+        width: 80%;
         margin-right: 5px;
         border-radius: 0px;
         height: 38px;
