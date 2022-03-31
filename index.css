@@ -288,3 +288,21 @@ nav .nav-links.index{
     }    
 
 }
+
+
+@media screen and (max-width: 355px){
+
+    .main-text{
+        margin-top: 80px;
+
+    }
+
+    .main-text h1{
+        text-align: center;
+        font-size: 1.75rem;
+    }
+
+    .main-text p{
+        font-size: 0.75rem;
+    }
+}

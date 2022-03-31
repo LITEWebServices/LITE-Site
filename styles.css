@@ -262,7 +262,7 @@ footer .legal{
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 355px){
     nav h2{
         font-size: 0.5rem;
     }
