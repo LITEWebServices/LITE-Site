@@ -198,6 +198,10 @@ footer .legal{
         margin-left: 5px;
     }
     
+    nav h2{
+        font-size: 0.5rem;
+    }
+
     nav ul{
         width: 80%;
         margin-right: 5px;
