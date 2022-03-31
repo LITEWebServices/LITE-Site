@@ -38,7 +38,7 @@ body{
 nav .logo{
     text-align: center;
     /* width: 72px; */
-    max-height: 58px;
+    height: 58px;
     transition: all 500ms;
     background: rgb(0, 0, 0, 0.5);
     margin-left: 15px;
@@ -199,7 +199,7 @@ footer .legal{
     }
     
     nav h2{
-        font-size: 0.5rem;
+        font-size: 0.45em;
     }
 
     nav ul{
@@ -268,6 +268,6 @@ footer .legal{
 
 @media screen and (max-width: 355px){
     nav h2{
-        font-size: 0.5rem;
+        font-size: 0.4em;
     }
 }
