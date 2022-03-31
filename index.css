@@ -222,6 +222,14 @@ nav .nav-links.index{
 }
 
 
+@media screen and (max-width: 815px){
+    .main-text p{
+        text-align: center;
+        text-indent: 0px;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 415px){
 
     .top-container{
