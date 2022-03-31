@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 nav .nav-links.about{
@@ -68,6 +68,7 @@ section{
 .pfp.tanish{
     background: url('../images/creators/tanish_fbla.jpeg'); 
     background-size: cover;
+    /* transform: scale(1.5); */
 }
 
 .pfp h3{
@@ -295,9 +296,9 @@ section{
         margin-bottom: 0px;
     }
 
-    .pfp{
+    /* .pfp{
        
-    }
+    } */
 
 }
 
@@ -320,4 +321,10 @@ section{
         font-size: 1rem;
     }
 
+}
+
+@media screen and (max-width: 400px){
+    .pfp{
+        margin: 80px;
+    }
 }

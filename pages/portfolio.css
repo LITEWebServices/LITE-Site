@@ -27,6 +27,7 @@ nav .nav-links.portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 125px;
     /* justify-content: center; */
 }
 
@@ -38,20 +39,12 @@ nav .nav-links.portfolio{
     
 }
 
-.portfolio-landing .drop-down-btn{
+.portfolio-landing .fa-solid.fa-angle-down{
     margin-top: 250px;
     text-align: center;
+    font-size: 3rem;
 }
 
-.drop-down-btn.portfolio{
-    font-size: 4rem;
-    transition: none;
-}
-
-.drop-down-btn.portfolio:hover{
-    transition: none;
-    transform: scale(1);
-}
 
 .site-showcase{
     height: 110vh;
@@ -117,21 +110,6 @@ nav .nav-links.portfolio{
 
 }
 
-
-/* .img-2, .img-3{
-    position: absolute;
-    margin-top: 15px;
-    left: 55%;
-    box-shadow: 5px 5px 30px rgb(0, 0, 0);
-    width: 30%;
-    border: white 1px solid;
-}
-
-.img-3{
-    top: 12%;
-    left: 68%;
-    
-} */
 
 .portfolio-images .text{
     text-align: center;
@@ -220,5 +198,100 @@ nav .nav-links.portfolio{
         margin-bottom: 5px;
     }
 
+
+}
+
+@media screen and (max-width: 400px){
+    .portfolio-landing{
+        margin-top: 7.5vh;
+    }
+    
+    .portfolio-landing p{
+        font-size: 2.5rem;
+        margin-left: 20px;
+        width: 90%;
+    }
+    
+    .site-showcase{
+        height: 110vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .link-btn p{
+        display: none;
+    }
+
+    .main-img{
+        transform: scale(0.75) translateX(0);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        z-index: 0;
+        /* display: none; */
+        /* border: orange 2px solid; */
+    }    
+    
+    .slide-in{
+        position: relative;
+        height: 80%;
+        width: 98%;
+        top: 5%;
+        transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* border: green 2px solid; */
+
+    }
+    
+    .slide-in .img-2, .img-3{
+        position: absolute;
+        top: -135px;
+        left: 0%;
+        width: 70%;
+        border: white 1px solid;
+    }
+    
+    .slide-in .img-3{
+        top: -85px;
+        left: 50%;
+        width: 50%;
+    }
+    
+    .slide-in .text{
+        text-align: center;
+        color: white;
+        position: absolute;
+        width: 90%;
+        top: 5%;
+        left: 0;
+        margin-left: 5%;
+        
+    }
+    
+    
+    .portfolio-images .text h4{
+        text-decoration: underline;
+        font-weight: 900;
+    }
+    
+    .portfolio-images .text p{
+        font-weight: lighter;
+    }
+    
+
+    .divider{
+        width: 80%;
+        margin-left: 10%;
+        height: 2px;
+        background: white;
+        margin-top: 20px;
+    }
 
 }

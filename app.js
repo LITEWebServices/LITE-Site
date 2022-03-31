@@ -33,17 +33,17 @@ if (document.URL.includes("index.html") || document.body.getAttribute('class') =
     })
 
 
-    const navObserver = new IntersectionObserver(function(entries, introSectionObserver) {
-        entries.forEach(entry => {
-            if(!entry.isIntersecting){
-                navbar.classList.remove('inactive');
-            } else{
-                navbar.classList.add('inactive');
-            }
-        });
-    }, introSectionOptions);
+    // const navObserver = new IntersectionObserver(function(entries, introSectionObserver) {
+    //     entries.forEach(entry => {
+    //         if(!entry.isIntersecting){
+    //             navbar.classList.remove('inactive');
+    //         } else{
+    //             navbar.classList.add('inactive');
+    //         }
+    //     });
+    // }, introSectionOptions);
 
-    navObserver.observe(introSection);
+    // navObserver.observe(introSection);
 
 
 }

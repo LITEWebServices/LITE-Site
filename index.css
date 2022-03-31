@@ -15,77 +15,37 @@ nav .nav-links.index{
 
 /* Content */
 .top-container{
-    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,30,30,1) 50%, rgba(0,0,0,1) 100%); */
-    /* background: rgb(20,20,20); */
     background: linear-gradient(90deg, rgba(34,45,90,1) 0%, rgba(245,96,96,1) 75%, rgb(70, 41, 87) 100%);
     position: relative;
     width: 100%;
-    min-height: 120vh;
+    height: 120vh;
     color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
 
 }
 
-.home-navigation{
-    /* position: absolute; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    right: 0;
-    /* border: yellow 1px solid; */
-}
-
-.lite-text{
-    margin-left: 15px;
-    text-align: center;
-    background: rgb(0, 0, 0, 0.5);
-    padding: 0px 5px;
-}
-
-.lite-text h1{
-    font-size: 2rem;
-}
-.lite-text h2{
-    font-size: 0.5rem;
-    transform: translateY(-50%);
-}
-
-.home-links{
-    width: 40%;
-    /* border: blue 1px solid; */
-}
-
-.home-links ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    padding: 10px;
-    margin-right: 25px;
-}
-
-.home-links li a{
-    color: white;
-}
-
-.home-links li a:hover{
-    color: rgba(255,255,255, 0.5);
-}
 
 .main-text{
     margin-top: 150px;
     margin-left: 100px;
     width: 75%;
     /* background: rgba(0, 0, 0, 0.5); */
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight:bolder;
     text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     padding: 50px;
     border-radius: 15px;
 
+}
+
+.main-text h1{
+    margin-bottom: 50px;
+}
+
+.main-text p{
+    font-size: 2rem;
+    text-indent: 50px;
 }
 
 .drop-down{
@@ -95,6 +55,23 @@ nav .nav-links.index{
     justify-content: center;
     /* text-align: center; */
     
+}
+
+.drop-down-btn{
+    height: 25px;
+    width: 175px;
+    text-align: center;
+    border-radius: 15px;
+    /* background: rgba(34,45,90,1); */
+    border: white solid 2px;
+    cursor: pointer;
+    transform: scale(1);
+    margin-top: 15px;
+    transition: transform 500ms, border-radius 500ms;
+}
+
+.drop-down-btn:hover{
+    border-radius: 25px;
 }
 
 .drop-down-text p{
@@ -118,39 +95,6 @@ nav .nav-links.index{
     color: rgba(255,255,255,1);
     height: 100px;
     transition: height 1000ms, color 100ms 500ms;
-}
-
-.top-container .drop-down-btn{
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    /* background: rgba(34,45,90,1); */
-    border: white solid 2px;
-    cursor: pointer;
-    transform: scale(1);
-    transition: transform 500ms, border-radius 500ms, rotate 500ms 500ms;
-}
-
-.top-container .drop-down-btn:hover{
-    transform: scale(2);
-    /* height: 50px;
-    width: 50px; */
-    border-radius: 25px;
-
-}
-
-.drop-down-btn.active{
-    /* background: rgb(255, 255, 255); */
-    /* transform: rotate(180deg); */
-    rotate: 180deg;
-}
-
-
-
-.top-container i{
-    width: 100%;
-    text-align: center;
-    transform: translateY(5%);
 }
 
 
@@ -226,6 +170,7 @@ nav .nav-links.index{
     position: absolute;
     /* left: 10%; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 
@@ -247,9 +192,11 @@ nav .nav-links.index{
 }
 
 .wcia-video{
-    width: 950px;
+    width: 75%;
+    margin-left: 12.5%;
     height: 500px;
     margin-top: 75px;
+    /* margin-bottom: 150px; */
     /* margin-left:-6%;  */ 
 }
 
@@ -275,103 +222,68 @@ nav .nav-links.index{
 }
 
 
-@media screen and (min-width: 1248px){
-    .caption-container{
-        width: 65vh;
+@media screen and (max-width: 400px){
+
+    .top-container{
+        height: 100vh;
+    }
+    
+    .main-text{
+        margin-top: 40px;
+        margin-left: 0px;
+        font-size: 2rem;
     }
 
-    .wcia-link{
-        position:absolute;
-    }
-
-}
-
-@media screen and (max-width: 1024px){
-    .caption-container{
-        width: 55vh;
-    }
-}
-
-@media screen and (max-width: 800px){
-    .caption-container{
-        height: 50vh;
-        width: 100%;
-        left: 0;
+    .main-text p{
         text-align: center;
-    }
-    .head-bottom .start-btn{
-        font-size: 1.5vh;
+        text-indent: 0px;
     }
 
-    .showcase .page.bombay-market:hover{
-        background: rgb(255,97,97);
-        background: radial-gradient(circle, rgba(255,97,97,1) 0%, rgba(255,255,255,1) 100%);
-        height: 30vh;
+    .drop-down-text.active{
+        height: 200px;
     }
 
-    .wcia-video{
-        margin-top: 0;
-        /* border: red 5px solid; */
-        height: 300px;
-    }
-
-    .showcase{
-        height: 60vh;
+    .head-bottom{
+        height: 10vh;
         
     }
-
-    .wcia-link{
-        font-size: 2rem;
-        margin-left: 10%;
-    }
-
-    .wcia-container{
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media screen and (max-width: 600px){
-
     .head-bottom h2{
-        margin-left: 10%;
+        color: white;  
         font-size: 1rem;
     }
-    .head-bottom .start-btn{
-        margin-right: 5%;
-        width: 20vw;
-    }
-    .caption-container h1{
-        margin-left: 8%;
-    }
-
-    .wcia-video{
-        height: 200px;
-        width: 400px;
-        margin-top: 5px;
-    }
-
-    .wcia-link{
-        font-size: 1rem;
-    }
+    .start-btn{
+        height: 60%;
+        width: 20%;
+        font-size: 0.75rem;
+    }   
 
     .showcase{
         height: 50vh;
-    }
-}
-
-@media screen and (max-width: 376px){
-    .head-bottom .start-btn{
-        width: 40vw;
-    }
-    .wcia-video{
-        height: 300px;
-        width: 350px;
-        margin-top: 5px;
+        width: 100vw;
+        /* border: purple 2px solid; */
     }
 
     .wcia-container{
-        /* left: 0; */
+        width: 100%;
+        /* border: 2px solid orange; */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
     }
+    
+    .wcia-link{
+        font-size: 1rem;
+        width: 100%;
+        /* border: green 2px solid; */
+
+    }
+
+    .wcia-video{
+        width: 350px;
+        height: 150px;
+        margin-left: 0;
+    }    
 
 }

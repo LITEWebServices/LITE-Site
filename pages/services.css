@@ -28,6 +28,10 @@ h1{
     font-size: 2rem;
 }
 
+.package-options ul{
+    list-style: none;
+}
+
 .text-background{
     width: 60%;
     background: rgba(0, 0, 0, 0.05);
@@ -260,5 +264,51 @@ textarea{
     .package-options ul{
         list-style: none;
     }
+
+}
+
+@media screen and (max-width: 400px){
+
+    .free-services{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-background{
+        margin-left: 0px;
+    }
+    
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    
+    .contact-options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-options .calendly-link{
+        margin-top: 50px;
+        width: 80%;
+    }
+    
+    .contact-options .calendly-link p{
+        padding: 15px;
+    }
+    
+    .contact-options .calendly-link a{
+        font-size: 0.75rem;
+    }
+    
+    .inputs{
+        width: 90%;
+    }
+    
 }
 
