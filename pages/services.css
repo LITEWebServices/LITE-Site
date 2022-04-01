@@ -79,7 +79,8 @@ section{
 
 .package.p1{
     /* background: rgb(131, 48, 48); */
-    background: rgba(245,96,96,1);
+    background: rgb(55, 89, 226);
+    
 }
 
 .package.p2{
@@ -89,7 +90,7 @@ section{
 
 .package.p3{
     /* background: rgb(42, 60, 129); make lighter blue */
-    background: rgb(55, 89, 226);
+    background: rgba(245,96,96,1);
     text-indent: 0;
     text-align: center;
 }
