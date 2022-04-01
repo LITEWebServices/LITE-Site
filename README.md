@@ -25,6 +25,7 @@ Social media icons
 
 Website is responsive for iPhone XS, iPhone 11, Laptop/Desktop, Tablet.
 
+Site research done using stackoverflow.com
 
 Copyright Copmliance / Documentation:
 
