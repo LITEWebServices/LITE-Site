@@ -26,11 +26,13 @@ if (document.URL.includes("index.html") || document.body.getAttribute('class') =
     const dropDownBtn = document.querySelector('.drop-down-btn');
     const dropDownText = document.querySelector('.drop-down-text');
 
-    dropDownBtn.addEventListener('click', ()=>{
-       
-        dropDownBtn.classList.toggle('active');
-        dropDownText.classList.toggle('active');
+    dropDownBtn.addEventListener('click', ()=> {
+        dropDownBtn.classList.toggle('active'); //toggle
+        dropDownText.classList.toggle('active'); //toggle
+        
     })
+
+
 
 
     // const navObserver = new IntersectionObserver(function(entries, introSectionObserver) {

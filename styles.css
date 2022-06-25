@@ -133,11 +133,14 @@ nav .nav-menu{
     margin-top: 10px;
 }
 footer{
+    position: relative;
+    /* bottom: -100px; */
     height: 100%;
     width: 100%;
     background: rgb(255, 255, 255);
-    position: sticky;
+    /* position: sticky; */
     text-align: center;
+    /* border: green solid 5px; */
 }
 
 footer li{
@@ -152,6 +155,7 @@ footer .sections{
 .sections div{
     display: flex;
     flex-direction: column;
+    /* border: 5px solid red; */
 }
 
 footer .sections a{
@@ -161,7 +165,7 @@ footer .sections a{
 }
 footer .social-media-links{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     list-style: none;
     color: black;
@@ -192,6 +196,33 @@ footer .legal{
     text-align: right;
 }
 
+
+@media screen and (max-width: 1200px){
+    footer .sections{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        background: rgba(0, 0, 0, 0.5);
+        width: 60%;
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 25px;
+    }
+    footer .sections{
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 30% 20% 50%; */
+    }
+}
+
 @media screen and (max-width: 415px){
     
     nav .logo{
@@ -215,11 +246,6 @@ footer .legal{
     }
     
     
-    footer .sections{
-        display: flex;
-        flex-direction: column;
-        /* grid-template-columns: 30% 20% 50%; */
-    }
     
     .sections div{
         display: flex;
