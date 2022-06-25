@@ -29,7 +29,8 @@ nav .nav-links.index{
 .main-text{
     margin-top: 150px;
     margin-left: 100px;
-    width: 75%;
+    width: 50%;
+    height: 150px;
     /* background: rgba(0, 0, 0, 0.5); */
     font-size: 3rem;
     font-weight: bolder;
@@ -41,22 +42,41 @@ nav .nav-links.index{
 }
 
 .main-text p{  /* Slogan */
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 5%;
     margin-top: 40px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.typing{
+    position: relative;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    border-right: 2px solid white;
+    animation: blink 0.9s infinite ease;
+}
+
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .drop-down{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
-    /* text-align: center; */
     height: 100px;
     width: 75%;
-    margin-left: 100px;
-    /* border: yellow 2px solid; */
-    
+    margin-left: 75px;    
 }
 
 .drop-down-btn{
@@ -163,23 +183,6 @@ nav .nav-links.index{
     padding-top: 45px;
     padding-bottom: 1%;
 }
-
-/* .transition-line{
-    height: 50px;
-    width: 100%;
-
-}
-
-.transition-line.upper{
-    background: rgb(200,200,200);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-} */
-
-/* .transition-line.lower{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
-} */
-
 
 .showcase{
     height: 1400px;
@@ -330,6 +333,11 @@ nav .nav-links.index{
         font-size: 1.5rem;
         margin-left: 0;
     }
+
+    .typing::after{
+        height: 25px;
+    }
+
     .drop-down{
         flex-direction: column;
         justify-content: center;
@@ -420,14 +428,14 @@ nav .nav-links.index{
 
     }
 
-    .main-text h1{
-        text-align: center;
-    }
-
     .main-text p{
         text-align: center;
         text-indent: 0px;
         font-size: 1rem;
+    }
+
+    .typing::after{
+        height: 17.5px;
     }
     
     .drop-down{

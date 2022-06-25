@@ -16,13 +16,36 @@ slideFunc();
 //home page ----------------------------------------------
 
 if (document.URL.includes("index.html") || document.body.getAttribute('class') == 'index') {
-    //scroll-observer
-    const navbar = document.querySelector('.nav-bar');
-    const introSection = document.querySelector('.main-text p');
-    const introSectionOptions = {};
+    //Type Writer Effect
+    const phrases = ['LITE Web Services          ', 'We provide the digital representation that you deserve.          '];
+    let currentLetters = '';
+    let currentPhrase = '';
+    let arrIndex = 0;
+    let letterIndex = 0;
 
-    // navbar.style.display = 'none'; 
+    (function type(){
+        if (arrIndex === phrases.length) {
+            arrIndex = 0;
+        }
 
+        currentPhrase = phrases[arrIndex];
+        currentLetters = currentPhrase.slice(0, ++letterIndex);
+
+        document.querySelector(".typing").textContent = currentLetters;
+
+        if (currentLetters.length === currentPhrase.length) {
+            arrIndex++;
+            letterIndex = 0;
+            // setTimeout(type, 2000);
+            
+        }
+
+        setTimeout(type, 125);
+
+    })();
+    
+    
+    // Drop Down Section
     const dropDownBtn = document.querySelector('.drop-down-btn');
     const dropDownText = document.querySelector('.drop-down-text');
 
@@ -31,23 +54,6 @@ if (document.URL.includes("index.html") || document.body.getAttribute('class') =
         dropDownText.classList.toggle('active'); //toggle
         
     })
-
-
-
-
-    // const navObserver = new IntersectionObserver(function(entries, introSectionObserver) {
-    //     entries.forEach(entry => {
-    //         if(!entry.isIntersecting){
-    //             navbar.classList.remove('inactive');
-    //         } else{
-    //             navbar.classList.add('inactive');
-    //         }
-    //     });
-    // }, introSectionOptions);
-
-    // navObserver.observe(introSection);
-
-
 }
 
 //portfolio page ----------------------------------------------
