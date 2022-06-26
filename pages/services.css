@@ -15,7 +15,7 @@ h1{
 }
 
 .spacer.s1.services{
-    background: rgb(233,233,233);
+    background: rgb(240, 240, 245);;
     height: 20vh;
 }
 
@@ -43,7 +43,7 @@ h1{
 }
 
 section{
-    background: rgb(233,233,233);
+    background: rgb(240, 240, 245);;
     left: 0;
     right: 0;
 }

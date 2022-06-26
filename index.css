@@ -520,6 +520,12 @@ nav .nav-links.index{
         font-size: 1rem;
         transition: all 500ms 500ms, color 500ms, height 800ms 300ms, padding 1000ms;
     }
+
+    .drop-down-text p{
+        margin-top: 0px;
+        font-size: 1rem;
+    }
+
     .drop-down-text.active{
         width: 60%;
         height: 250px;
