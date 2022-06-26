@@ -6,7 +6,7 @@ This is the LITE Web Services official website. The site displays an overview of
 The LITE Web Services website includes updated features such as:
 WCIA Video, Pitch Deck, Parallax effects, Interactive form, Animations, Hover Effects, Calendly, Internship form, and Social media icons.
 
-Website is responsive for iPhone XS, iPhone 11, Laptop/Desktop, Tablet. Site is also accessible to browsers including (but not limited to) FireFox, Chrome & Safari.
+Website is responsive for iPhone XS, iPhone 11, Laptop/Desktop, Tablet and most other devices. Site is also accessible to browsers including (but not limited to) FireFox, Chrome & Safari.
 
 Technologies included: Intersection Observer API, tilt.js library (https://micku7zu.github.io/vanilla-tilt.js/), Github (version control + collaborative efforts), cdnjs (library file request), HTMl/CSS/JavaScript
 
