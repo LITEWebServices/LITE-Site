@@ -1,4 +1,4 @@
-Uploaded and created by LITE Web Services (Tanish K & Lalit G)
+Uploaded and created by LITE Web Services (Tanish Khadse & Lalit Gurrapu)
 
 
 This is the LITE Web Services official website. The site displays an overview of LITE Web Services where the user can find information about pricing structure, motives, and previous work. 
