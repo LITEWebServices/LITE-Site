@@ -231,19 +231,19 @@ nav .nav-links.index{
 }
 
 .panel.ctb{
-    background-color: rgb(235, 181, 181);
+    background-color: rgb(255, 185, 218);
     border: rgb(117, 89, 63) 2px double;
 
 }
 
 .panel.mfbla{
-    background-color: rgb(66, 66, 96);
+    background-color: rgb(53, 53, 139);
     margin-top: 20px;
-    border: rgb(144, 35, 35) double 2px;
+    border: rgb(177, 42, 42) double 2px;
 }
 
 .panel.bbm{
-    background-color: rgb(117, 27, 27);
+    background-color: rgb(171, 54, 54);
     margin-top: 40px;
     border: rgb(220, 220, 220) double 2px;
 }
