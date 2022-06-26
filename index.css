@@ -5,7 +5,6 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     --text-color: rgb(92, 92, 92);
-    
 }
 
 nav .nav-links.index{
@@ -16,13 +15,29 @@ nav .nav-links.index{
 
 /* Content */
 .top-container{
-    background: linear-gradient(90deg, rgba(34,45,90,1) 0%, rgba(245,96,96,1) 75%, rgb(70, 41, 87) 100%);
+    background-image: repeating-linear-gradient(63deg,   
+    rgba(70, 41, 87),
+    rgba(34,45,90,1),
+    rgba(245,96,96,1));
+    
+    background-size: 200%;
     position: relative;
     width: 100%;
     height: 800px;
     color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
+    animation: grad-transition 50000ms infinite alternate;
+}
+
+@keyframes grad-transition {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }
 
 
@@ -122,9 +137,9 @@ nav .nav-links.index{
 .drop-down-text.active{
     z-index: 1;
     color: rgba(255,255,255,1);
-    width: 75%;
+    width: 50%;
     padding: 10px;
-    transition: width 1500ms, color 100ms 500ms, padding 1000ms;
+    transition: width 1500ms, color 100ms 900ms, padding 1000ms;
 }
 
 
@@ -191,7 +206,7 @@ nav .nav-links.index{
 }
 
 .community{
-    background: rgb(248, 248, 248);
+    background: rgb(240, 240, 245);
 }
 
 .clients-container{
@@ -308,8 +323,52 @@ nav .nav-links.index{
     height: 500px;
     /* border: 5px solid red; */
     object-fit: cover;
+}
+
+.scheduler{
+    background-image: linear-gradient(90deg, 
+    rgba(245,96,96,1),
+    rgba(34,45,90,1), 
+    rgb(70, 41, 87),
+    rgba(245,96,96,1),
+    rgba(34,45,90,1),  
+    rgb(70, 41, 87));
+
+    background-size: 200%;
+    height: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 500ms, background-position 1000ms;
+    text-align: center;
+}
+
+.scheduler h4{
+    font-size: 1.5rem;
+}
+
+.scheduler a{
+    color: white;
+    background-color: #222D5a;
+    border-radius: 10px;
+    padding: 7px;
+    transition: all 500ms;
+    /* border: black 5px solid; */
+}
+
+.scheduler:hover{
+    background-position: right;
+}
+
+.scheduler a:hover{
+    /* background-image: linear-gradient(90deg, rgba(34,45,90,1) 0%, rgba(245,96,96,1) 100%); */
+    background-color: rgb(200, 65, 65);
 
 }
+
+
 
 @media screen and (max-width: 1200px){
     .clients-container .panel{
@@ -404,6 +463,17 @@ nav .nav-links.index{
         font-size: 1.3rem;
     }
 
+    .head-bottom h2{
+        font-size: 1.25rem;
+        margin-left: 10px;
+    }
+
+    .start-btn{
+        height: 50px;
+        width: 135px;
+        border-radius: 1vh;
+    }   
+
     .wcia-container{
         align-items: center;
     }
@@ -412,6 +482,8 @@ nav .nav-links.index{
         margin-left: 0;
         width: 90%;
     }
+
+
 
 }
 
@@ -431,11 +503,11 @@ nav .nav-links.index{
     .main-text p{
         text-align: center;
         text-indent: 0px;
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
 
     .typing::after{
-        height: 17.5px;
+        height: 27px;
     }
     
     .drop-down{
