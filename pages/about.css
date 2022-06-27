@@ -66,9 +66,9 @@ section{
 }
 
 .pfp.tanish{
-    background: url('../images/creators/tanish_fbla.jpeg'); 
+    background: url('../images/creators/tanish_website_pic.jpeg'); 
     background-size: cover;
-    /* transform: scale(1.5); */
+    background-position: -40px;
 }
 
 .pfp h3{
