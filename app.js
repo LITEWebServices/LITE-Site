@@ -106,15 +106,6 @@ if (document.URL.includes("about.html")) {
     let currentSlide = 0;
     slides[0].classList.add('active');
     pegs[0].classList.add('active');
-    var rmvActive = function(i){
-        slides.forEach((item) => {
-            item.classList.remove('active');
-        })
-
-        pegs.forEach((item) => {
-            item.classList.remove('active');
-        });
-    }
 
     pegs.forEach((item, index) => {
 
@@ -135,6 +126,29 @@ if (document.URL.includes("about.html")) {
 }
 
 if (document.URL.includes("services.html")) {
+    let selected = "budget";
+    // document.querySelectorAll(".package-button.budget").classList.add('active');
+    // document.querySelectorAll(".package.budget").classList.add('active');
+
+    let currBtn;
+    const pckg_buttons = document.querySelectorAll(".package-button");
+
+    pckg_buttons.forEach((item, index) => {
+
+        item.addEventListener('click', () => {
+
+            pckg_buttons.forEach((item)=>{
+                item.classList.remove('active');
+                document.querySelector('.package.' + selected).classList.remove('active');
+                
+            })
+            selected = pckg_buttons[index].className.split(" ")[1];
+            currBtn = document.querySelector('.package-button.' + selected);
+            currBtn.classList.add('active');
+            document.querySelector('.package.' + selected).classList.add('active');
+            // document.querySelector('h1').textContent = selected;
+        })
+    })
 
 }
 
